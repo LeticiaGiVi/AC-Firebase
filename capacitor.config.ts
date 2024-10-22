@@ -1,10 +1,9 @@
-import { CapacitorConfig } from '@capacitor/cli';
+import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'appFireBase',
-  webDir: 'www',
-  bundledWebRuntime: false
+  appName: 'AC-FireBase',
+  webDir: 'www'
 };
 
 export default config;

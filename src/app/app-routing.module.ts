@@ -12,13 +12,30 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'produtos/cadastro-produto',
-    loadChildren: () => import('./produtos/cadastro-produto/cadastro-produto.module').then( m => m.CadastroProdutoPageModule)
+    path: 'pets/pagina-principal',
+    loadChildren: () => import('./pets/pagina-principal/pagina-principal.module').then( m => m.PaginaPrincipalPageModule)
   },
   {
-    path: 'produtos/alterar-produto/:id',
-    loadChildren: () => import('./produtos/alterar-produto/alterar-produto.module').then( m => m.AlterarProdutoPageModule)
+    path: 'pets/pagina-cadastro',
+    loadChildren: () => import('./pets/pagina-cadastro/pagina-cadastro.module').then( m => m.PaginaCadastroPageModule)
   },
+  {
+    path: 'pets/pagina-alterar/:id',
+    loadChildren: () => import('./pets/pagina-alterar/pagina-alterar.module').then( m => m.PaginaAlterarPageModule)
+  },
+  {
+    path: 'cuidadores/pagina-principal',
+    loadChildren: () => import('./cuidadores/pagina-principal/pagina-principal.module').then( m => m.PaginaPrincipalPageModule)
+  },
+  {
+    path: 'cuidadores/pagina-cadastro',
+    loadChildren: () => import('./cuidadores/pagina-cadastro/pagina-cadastro.module').then( m => m.PaginaCadastroPageModule)
+  },
+  {
+    path: 'cuidadores/pagina-alterar/:id',
+    loadChildren: () => import('./cuidadores/pagina-alterar/pagina-alterar.module').then( m => m.PaginaAlterarPageModule)
+  },
+
 ];
 
 @NgModule({
